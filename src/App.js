@@ -1,4 +1,4 @@
-import { Form, Footer, Header } from "./components";
+import { Signup, Footer, Header } from "./components";
 import { BrowserRouter } from "react-router-dom";
 
 export const App = () => {
@@ -6,7 +6,7 @@ export const App = () => {
     <BrowserRouter>
     <div>
       <Header />
-      <Form />
+      <Signup />
       <Footer />
     </div>
     </BrowserRouter>

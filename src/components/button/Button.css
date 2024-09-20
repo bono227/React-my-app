@@ -1,10 +1,11 @@
-button {
+.buttonClass {
   padding: 10px 20px;
-  background-color: #bdd1fa;
+  background-color: #b6ccf9;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   margin: 10px;
+  font-weight: 600;
 }
 
 #small {
