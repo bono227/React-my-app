@@ -1,17 +1,14 @@
-import { Signup, Footer, Header } from "./components";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home, Signin, Signup } from "./pages";
 
 export const App = () => {
   return (
     <BrowserRouter>
-    <div>
-      <Header />
-      <Signup />
-      <Footer />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
     </BrowserRouter>
-    
   );
-
 };
-

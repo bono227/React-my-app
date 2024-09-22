@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import "./Footer.css";
-
+import { useThemeContext } from "../../context";
 
 export const Footer = () => {
-    const theme = localStorage.getItem("theme");
+  const { theme } = useThemeContext();
 
-    const [checked, setChecked] = useState(theme === "dark" ? true : false);
-
-    return <div id="footer-container" style={{
-        backgroundColor : theme === "dark" ? "#333" : "#f5f5f5",
+  return (
+    <div
+      id="footer-container"
+      style={{
+        backgroundColor: theme === "dark" ? "#333" : "#f5f5f5",
         color: theme === "dark" ? "#f5f5f5" : "#333",
-    }}>
-        <div>{theme === "dark" ? "Dark Theme" : "Light Theme"}</div>
-    </div>;
-} 
+      }}
+    >
+      <div>{theme === "dark" ? "Dark Theme" : "Light Theme"}</div>
+    </div>
+  );
+};
