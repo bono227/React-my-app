@@ -1,11 +1,12 @@
 import React from "react";
-import { Footer, Header, Counter } from "../../components";
+import { Footer, Header, ProductList } from "../../components";
+import { productsData } from "../../data";
 
 export const Home = () => {
   return (
     <div>
       <Header />
-      <Counter />
+      <ProductList data={productsData} />
       <Footer />
     </div>
   );
