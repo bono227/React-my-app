@@ -16,8 +16,8 @@ export const Header = () => {
     <div
       id="header-container"
       style={{
-        backgroundColor: theme === "dark" ? "#333" : "#f5f5f5",
-        color: theme === "dark" ? "#f5f5f5" : "#333",
+        backgroundColor: theme === "dark" ? "#003d66" : "#b3e0ff",
+        color: theme === "dark" ? "#ffffff" : "#333",
       }}
     >
       <div>{theme === "dark" ? "Dark Theme" : "Light Theme"}</div>

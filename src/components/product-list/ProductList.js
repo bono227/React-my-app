@@ -10,7 +10,7 @@ export const ProductList = (props) => {
     <div
       className="ListContainer"
       style={{
-        backgroundColor: theme === "dark" ? "#333" : "#f5f5f5",
+        backgroundColor: theme === "dark" ? "#002e4d" : "#e6f5ff",
         color: theme === "dark" ? "#f5f5f5" : "#333",
       }}
     >

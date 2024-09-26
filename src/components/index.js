@@ -6,3 +6,4 @@ export * from "./form";
 export * from "./counter";
 export * from "./product-card";
 export * from "./product-list";
+export * from "./images";
