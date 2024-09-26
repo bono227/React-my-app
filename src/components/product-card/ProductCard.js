@@ -23,9 +23,21 @@ export const ProductCard = (props) => {
 
       <div id="buy-btn">
         <img id="preview" src={data.image} alt="photo" />
-        <Link to={"/signup"}>
-          <Button>Buy Now</Button>
-          <Button>
+        <Link to={"/signup"} id="buy-container">
+          <Button
+            style={{
+              backgroundColor: theme === "dark" ? "#b3e0ff" : "#003d66",
+              color: theme === "dark" ? "#333" : "#ffffff",
+            }}
+          >
+            Buy Now
+          </Button>
+          <Button
+            style={{
+              backgroundColor: theme === "dark" ? "#b3e0ff" : "#003d66",
+              color: theme === "dark" ? "#333" : "#ffffff",
+            }}
+          >
             <FaCartShopping />
           </Button>
         </Link>
