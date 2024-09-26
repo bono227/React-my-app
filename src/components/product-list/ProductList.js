@@ -1,17 +1,22 @@
+import { useThemeContext } from "../../context";
 import "./ProductList.css";
+import { ProductCard } from "../product-card";
 
 export const ProductList = (props) => {
+  const { theme } = useThemeContext();
   const { data } = props;
 
   return (
-    <div>
+    <div
+      className="ListContainer"
+      style={{
+        backgroundColor: theme === "dark" ? "#333" : "#f5f5f5",
+        color: theme === "dark" ? "#f5f5f5" : "#333",
+      }}
+    >
       {data.map((product, index) => (
-        <div key={index}>
-          <h1>{product.name}</h1>
-          <p>{product.description}</p>
-        </div>
+        <ProductCard data={product} index={index} />
       ))}
-      Products
     </div>
   );
 };

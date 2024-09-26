@@ -8,6 +8,10 @@
   font-weight: 600;
 }
 
+.buttonClass:hover {
+  transition: 0.3s;
+}
+
 #small {
   font-size: 10px;
   padding: 4px 8px;

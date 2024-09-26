@@ -1,12 +1,12 @@
 import React from "react";
 import { Footer, Header, ProductList } from "../../components";
-import { productsData } from "../../data";
+import { smartPhonesData } from "../../data";
 
 export const Home = () => {
   return (
     <div>
       <Header />
-      <ProductList data={productsData} />
+      <ProductList data={smartPhonesData} />
       <Footer />
     </div>
   );
